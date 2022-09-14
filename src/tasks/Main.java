@@ -10,7 +10,7 @@ public class Main {
 
         getHello();
         getName();
-        getNumber(getArrays());
+        getNumber(getArrays(7));
         /*
         Задание 4
         Скобочная последовательность является правильной, если каждой
@@ -65,9 +65,9 @@ public class Main {
         System.out.println("---------------");
     }
 
-    public static int[] getArrays() {
-        int[] number = new int[10];
-        System.out.println("Введите поочередно 10 чисел:");
+    public static int[] getArrays(int x) {
+        int[] number = new int[x];
+        System.out.println("Введите поочередно " + x + " чисел:");
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < number.length; i++) {
             int control = scanner.nextInt();
@@ -75,4 +75,6 @@ public class Main {
         }
         return number;
     }
+
+
 }
